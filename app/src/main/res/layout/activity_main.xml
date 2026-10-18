@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:padding="12dp" android:background="@color/primary">
+        <ImageView android:layout_width="38dp" android:layout_height="38dp"
+            android:src="@drawable/logo" android:contentDescription="Logo"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:layout_marginStart="10dp" android:text="Hazrat Amin" android:textSize="19sp"
+            android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <TextView android:id="@+id/themeBtn" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🌗" android:textSize="21sp" android:padding="6dp"
+            android:contentDescription="Switch light or dark mode" android:clickable="true" android:focusable="true"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <include android:id="@+id/pageAbout" layout="@layout/page_about"/>
+        <include android:id="@+id/pageServices" layout="@layout/page_services"/>
+        <include android:id="@+id/pageContact" layout="@layout/page_contact"/>
+    </FrameLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:background="@color/surface"
+        android:padding="6dp" android:elevation="8dp">
+        <TextView android:id="@+id/navAbout" style="@style/BodyText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:gravity="center" android:padding="10dp" android:text="👤 About" android:textSize="15sp" android:textStyle="bold"
+            android:clickable="true" android:focusable="true" android:contentDescription="About tab"/>
+        <TextView android:id="@+id/navServices" style="@style/BodyText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:gravity="center" android:padding="10dp" android:text="💼 Services" android:textSize="15sp" android:textStyle="bold"
+            android:clickable="true" android:focusable="true" android:contentDescription="Services tab"/>
+        <TextView android:id="@+id/navContact" style="@style/BodyText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:gravity="center" android:padding="10dp" android:text="✉️ Contact" android:textSize="15sp" android:textStyle="bold"
+            android:clickable="true" android:focusable="true" android:contentDescription="Contact tab"/>
+    </LinearLayout>
+</LinearLayout>

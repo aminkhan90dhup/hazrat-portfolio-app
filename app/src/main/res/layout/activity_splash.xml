@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center"
+    android:background="@color/primary">
+    <ImageView android:id="@+id/splashLogo" android:layout_width="150dp" android:layout_height="150dp"
+        android:src="@drawable/logo" android:contentDescription="Hazrat Amin logo"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" android:text="Hazrat Amin" android:textSize="30sp"
+        android:textStyle="bold" android:textColor="#FFFFFF"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:text="IT Teacher • CS Lecturer • Creator"
+        android:textSize="14sp" android:textColor="#E8C876"/>
+</LinearLayout>

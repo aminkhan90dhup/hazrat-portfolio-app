@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <!-- Hero / welcome -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_hero" android:padding="20dp" android:elevation="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Assalam-o-Alaikum! 👋" android:textSize="15sp" android:textColor="#E8C876"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" android:text="Welcome to my app" android:textSize="24sp"
+                android:textStyle="bold" android:textColor="#FFFFFF"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="14dp">
+                <FrameLayout android:layout_width="104dp" android:layout_height="104dp" android:background="@drawable/bg_circle_photo">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:layout_margin="4dp" android:scaleType="centerCrop" android:src="@drawable/profile"
+                        android:contentDescription="Photo of Hazrat Amin"/>
+                </FrameLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:orientation="vertical" android:layout_marginStart="14dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Hazrat Amin" android:textSize="22sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="IT Teacher • CS Lecturer\nContent Creator • Data Scientist" android:textSize="13.5sp" android:textColor="#D9E8DF"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="16dp">
+                <Button android:id="@+id/btnHire" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="Hire Me" android:textColor="#12211B" android:background="@drawable/bg_btn_accent"/>
+                <Button android:id="@+id/btnSeeServices" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginStart="10dp" android:text="My Services" android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_chip"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Bio -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp"
+            android:layout_marginTop="14dp" android:elevation="3dp">
+            <TextView style="@style/CardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="About Me"/>
+            <TextView style="@style/BodyText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                android:text="I am Hazrat Amin, an IT teacher in the Khyber Pakhtunkhwa government sector since 2017 and a BS Data Science graduate. I teach Computer Science at GHS Jijal, Lower Kohistan, create recorded lectures for students across Pakistan, and run a daily technology-news website and YouTube channel. I also build websites and AI videos for clients on Fiverr."/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="14dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2017" android:textSize="19sp" android:textStyle="bold" android:textColor="@color/primary"/>
+                    <TextView style="@style/BodyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Teaching since"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BS" android:textSize="19sp" android:textStyle="bold" android:textColor="@color/primary"/>
+                    <TextView style="@style/BodyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data Science"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Daily" android:textSize="19sp" android:textStyle="bold" android:textColor="@color/primary"/>
+                    <TextView style="@style/BodyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lectures + News"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Skills -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp"
+            android:layout_marginTop="14dp" android:elevation="3dp">
+            <TextView style="@style/CardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Skills"/>
+            <TextView style="@style/BodyText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                android:text="🎓  Computer Science Teaching\n💻  Website &amp; Android App Development\n🎬  AI Video Creation &amp; Editing\n📰  Tech News &amp; Content Writing\n🎵  Urdu Songs &amp; Voiceover\n📊  Data Science &amp; Mathematics"/>
+        </LinearLayout>
+        <!-- Mission & Vision -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp"
+            android:layout_marginTop="14dp" android:elevation="3dp">
+            <TextView style="@style/CardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mission &amp; Vision"/>
+            <TextView style="@style/BodyText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                android:text="Mission: to make quality Computer Science education free and easy for every student in Pakistan, in simple language.\n\nVision: a digitally literate Kohistan — where every student can learn, create and earn with technology."/>
+        </LinearLayout>
+        <!-- Social -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp"
+            android:layout_marginTop="14dp" android:layout_marginBottom="8dp" android:elevation="3dp">
+            <TextView style="@style/CardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Follow Me"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="12dp">
+                <Button android:id="@+id/btnFb" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="📘 Facebook" android:textColor="@color/primary" android:background="@drawable/bg_chip"/>
+                <Button android:id="@+id/btnYt" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginStart="8dp" android:text="▶️ YouTube" android:textColor="@color/primary" android:background="@drawable/bg_chip"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="8dp">
+                <Button android:id="@+id/btnWeb" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="🌐 Website" android:textColor="@color/primary" android:background="@drawable/bg_chip"/>
+                <Button android:id="@+id/btnFiverr" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginStart="8dp" android:text="💼 Fiverr" android:textColor="@color/primary" android:background="@drawable/bg_chip"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

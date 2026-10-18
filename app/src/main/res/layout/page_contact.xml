@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Contact Me" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/textMain"/>
+        <TextView style="@style/BodyText" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="Send a message — it arrives directly in my Gmail inbox."/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp"
+            android:layout_marginTop="14dp" android:elevation="3dp">
+            <TextView style="@style/FieldLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Name *"/>
+            <EditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:background="@drawable/bg_input" android:padding="12dp"
+                android:hint="e.g. Ahmed Khan" android:inputType="textPersonName" android:textColor="@color/textMain" android:textColorHint="@color/textSub"/>
+            <TextView style="@style/FieldLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Email Address *"/>
+            <EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:background="@drawable/bg_input" android:padding="12dp"
+                android:hint="you@example.com" android:inputType="textEmailAddress" android:textColor="@color/textMain" android:textColorHint="@color/textSub"/>
+            <TextView style="@style/FieldLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Phone Number (optional)"/>
+            <EditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:background="@drawable/bg_input" android:padding="12dp"
+                android:hint="03xx xxxxxxx" android:inputType="phone" android:textColor="@color/textMain" android:textColorHint="@color/textSub"/>
+            <TextView style="@style/FieldLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Subject"/>
+            <EditText android:id="@+id/etSubject" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:background="@drawable/bg_input" android:padding="12dp"
+                android:hint="What is this about?" android:inputType="text" android:textColor="@color/textMain" android:textColorHint="@color/textSub"/>
+            <TextView style="@style/FieldLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Message *"/>
+            <EditText android:id="@+id/etMessage" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:background="@drawable/bg_input" android:padding="12dp"
+                android:hint="Write your message…" android:inputType="textMultiLine" android:minLines="4" android:gravity="top"
+                android:textColor="@color/textMain" android:textColorHint="@color/textSub"/>
+            <Button android:id="@+id/btnSend" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="Send Message" android:textColor="#FFFFFF"
+                android:background="@drawable/bg_btn_primary"/>
+            <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center" android:layout_marginTop="10dp" android:visibility="gone"/>
+            <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:gravity="center" android:textSize="13.5sp" android:textColor="@color/textSub"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp"
+            android:layout_marginTop="14dp" android:elevation="3dp">
+            <TextView style="@style/CardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Other Ways to Reach Me"/>
+            <TextView style="@style/BodyText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                android:text="✉️  aminhazrat3@gmail.com\n📍  Dhup Jijal, Lower Kohistan, KP, Pakistan"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="12dp">
+                <Button android:id="@+id/btnWa" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="💬 WhatsApp" android:textColor="#FFFFFF" android:background="@drawable/bg_btn_primary"/>
+                <Button android:id="@+id/btnMail" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginStart="10dp" android:text="✉️ Email App" android:textColor="@color/primary" android:background="@drawable/bg_chip"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="8dp">
+                <Button android:id="@+id/btnFb2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="📘 Facebook" android:textColor="@color/primary" android:background="@drawable/bg_chip"/>
+                <Button android:id="@+id/btnYt2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginStart="10dp" android:text="▶️ YouTube" android:textColor="@color/primary" android:background="@drawable/bg_chip"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
