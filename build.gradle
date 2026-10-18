@@ -1,0 +1,7 @@
+// Top-level build file (for Android Studio). The APK shipped with this project
+// was also built with the manual pipeline script build-portfolio.sh in this folder.
+buildscript {
+    repositories { google(); mavenCentral() }
+    dependencies { classpath "com.android.tools.build:gradle:8.5.2" }
+}
+allprojects { repositories { google(); mavenCentral() } }
