@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+    <style name="SplashTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+    <style name="CardTitle"><item name="android:textSize">17sp</item><item name="android:textStyle">bold</item><item name="android:textColor">@color/textMain</item></style>
+    <style name="BodyText"><item name="android:textSize">14.5sp</item><item name="android:textColor">@color/textSub</item><item name="android:lineSpacingMultiplier">1.25</item></style>
+    <style name="FieldLabel"><item name="android:textSize">13sp</item><item name="android:textStyle">bold</item><item name="android:textColor">@color/textMain</item></style>
+</resources>
